@@ -10,33 +10,60 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* stili contenuto */
-
-main{
+main {
     height: calc(100vh - 80px);
     width: 100vw;
     display: flex;
 }
 
-footer{
+footer {
     height: 80px;
     width: 100vw;
     background-color: #282828;
 }
 
-.nav-left{
+/* stili nav sinistra */
+
+.nav-left {
     width: 200px;
     height: 100%;
     background-color: #000;
 }
 
-.content-middle{
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img-logo{
+    width: 180px;
+    height: 80px;
+    padding: 15px 15px 15px 0;
+}
+
+/* .menu{
+    
+} */
+
+.voci-menu{
+    padding: 8px 0;
+    color: #717171;
+}
+
+.icon-grandezze{
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+/* stili content centrale */
+
+.content-middle {
     width: calc(100% - 200px);
     height: 100%;
     background-color: #141922;
 }
 
-.nav-up{
+.nav-up {
     width: calc(100% - 200px);
     height: 80px;
     background-color: #0000006c;
@@ -47,7 +74,7 @@ footer{
     align-items: center;
 }
 
-.button-upgrade{
+.button-upgrade {
     width: 210px;
     background-color: #0000006c;
     text-align: center;
