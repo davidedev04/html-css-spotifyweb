@@ -10,16 +10,25 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-main {
-    height: calc(100vh - 80px);
-    width: 100vw;
-    display: flex;
+img {
+    width: 100%;
 }
 
-footer {
-    height: 80px;
-    width: 100vw;
-    background-color: #282828;
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.color-grey {
+    color: #717171;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.grandezze-span {
+    font-size: 12px;
 }
 
 /* stili nav sinistra */
@@ -31,31 +40,64 @@ footer {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
-.img-logo{
+.img-logo {
     width: 180px;
     height: 80px;
     padding: 15px 15px 15px 0;
 }
 
-/* .menu{
-    
-} */
-
-.voci-menu{
-    padding: 8px 0;
-    color: #717171;
+.crea-playlist{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
 }
 
-.icon-grandezze{
-    font-size: 22px;
+.square{
+    width: 35px;
+    height: 35px;
+    background-color: #a3a3a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.playlist-1{
+    margin: 15px 0;
+}
+
+/* .playlist-scroll {
+    overflow-y: scroll;
+} */
+
+li{
+    margin: 10px 0;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.voci-menu {
+    padding: 6px 0;
+}
+
+.icon-grandezze {
+    font-size: 20px;
     padding-right: 5px;
 }
 
 /* stili content centrale */
+
+main {
+    height: calc(100vh - 90px);
+    width: 100vw;
+    display: flex;
+}
 
 .content-middle {
     width: calc(100% - 200px);
@@ -78,11 +120,78 @@ footer {
     width: 210px;
     background-color: #0000006c;
     text-align: center;
-    color: #fff;
     font-size: 13px;
     font-weight: bold;
     border: 1px solid #fff;
     border-radius: 50px;
     padding: 10px;
     margin-right: 5px;
+}
+
+/* stili footer */
+
+footer {
+    height: 90px;
+    width: 100vw;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.width-sezioni {
+    width: calc(100% / 3);
+}
+
+.img-song {
+    width: 50px;
+    height: 50px;
+    margin: 0 12px;
+}
+
+.heart-file i:first-child {
+    margin-left: 25px;
+    margin-right: 5px;
+}
+
+.margin-icon {
+    margin: 0 13px;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.grandezza-play {
+    font-size: 28px;
+}
+
+.barra {
+    height: 5px;
+    background-color: #717171;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.width-barra {
+    width: 100%;
+}
+
+.width-barra-1 {
+    width: 25%;
+}
+
+.barra-in{
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.flex-right {
+    justify-content: right;
+}
+
+.margin-play {
+    margin-top: 10px;
 }
