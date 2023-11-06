@@ -39,7 +39,7 @@ img {
     background-color: #000;
 }
 
-.nav-left span{
+.nav-left span {
     font-size: 14px;
 }
 
@@ -48,7 +48,7 @@ img {
     margin: 0 auto;
 }
 
-.container-1{
+.container-1 {
     width: 97%;
     margin: 0 auto;
 }
@@ -59,13 +59,13 @@ img {
     padding: 15px 15px 15px 0;
 }
 
-.crea-playlist{
+.crea-playlist {
     margin-top: 8px;
     display: flex;
     align-items: center;
 }
 
-.square{
+.square {
     width: 35px;
     height: 35px;
     background-color: #a3a3a3;
@@ -75,62 +75,85 @@ img {
     margin-right: 6px;
 }
 
-.playlist-1{
+.playlist-1 {
     margin: 15px 0;
 }
 
-/* .playlist-scroll {
-    overflow-y: scroll;
-} */
+.playlist-scroll {
+    height: 200px;
+    overflow: scroll;
+}
 
-.playlist-scroll li{
+.playlist-scroll li {
     margin: 10px 0;
     font-size: 14px;
     text-decoration: none;
     list-style-type: none;
 }
 
-li a{
+li a {
     text-decoration: none;
 }
 
 .voci-menu {
     padding: 6px 0;
+    display: flex;
+    align-items: center;
 }
 
-.icon-grandezze {
-    font-size: 20px;
+.voci-menu img {
+    width: 27px;
     padding-right: 5px;
 }
 
-a:hover{
-    color: #fff;
+.profilo{
+    width: 180px;
+    position: fixed;
+    bottom: 90px;
+    background-color: #000;
 }
 
-.img-card{
+.border{
     width: 150px;
-    height: 150px;
-    position: absolute;
+    border: 1px solid #717171;
+    margin: 10px 0;
 }
 
-.play-hover{
-    height: 100%;
-    position: relative;
+.profilo-1{
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #0000007d;
-    opacity: 0;
+    margin-bottom: 10px;
 }
 
-.play-hover:hover{
-    opacity: 1;
+.sfondo-grey{
+    display: flex;
+    align-items: center;
+    background-color: #717171;
+}
+
+.img-circle{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profilo-1 img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.nav-left span:hover {
+    color: #fff;
     cursor: pointer;
 }
 
-.card-hover{
-    width: 150px;
-    height: 150px;
+.crea-playlist:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+li a:hover{
+    color: #fff;
 }
 
 /* stili content centrale */
@@ -142,8 +165,8 @@ main {
 }
 
 .content-middle {
-    width: calc(100% - 200px);
-    height: 100%;
+    width: calc(100vw - 200px);
+    height: 100vh;
     background-color: #141922;
 }
 
@@ -170,47 +193,89 @@ main {
     margin-right: 5px;
 }
 
-.middle-brani{
+.middle-brani {
+    height: calc(100vh - 90px);
     padding-top: 90px;
+    overflow: scroll;
 }
 
-.margin-recently{
+.img-card {
+    width: 150px;
+    height: 150px;
+}
+
+.play-hover {
+    /*     height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000007d; */
+    opacity: 0;
+}
+
+/* .play-hover:hover {
+    opacity: 1;
+    cursor: pointer;
+} */
+
+.card-hover {
+    width: 150px;
+    height: 150px;
+}
+
+.margin-recently {
     margin: 25px 0;
 }
 
-.sezioni-middle{
+.sezioni-middle {
     display: flex;
     justify-content: center;
 }
 
-.card-brani{
+.card-brani {
     width: 150px;
     margin-right: 15px;
     text-align: center;
 }
 
-.wrap-brani{
+.wrap-brani {
     display: flex;
     flex-wrap: wrap;
 }
 
-.card-brani span{
+.brani-2 {
+    margin-bottom: 22px;
+    margin-top: 30px;
+}
+
+.card-brani span,
+.brani-2 span {
     font-size: 14px;
 }
 
-.card-brani h4{
+.card-brani h4 {
     padding: 7px 0;
 }
 
-.sezioni-middle ul{
+.sezioni-middle ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-.sezioni-middle li{
+.sezioni-middle li {
     text-decoration: none;
     list-style-type: none;
     padding: 0 10px;
+}
+
+.margin-create {
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.img-circle img {
+    border-radius: 50%;
 }
 
 /* stili footer */
@@ -218,6 +283,8 @@ main {
 footer {
     height: 90px;
     width: 100vw;
+    position: fixed;
+    z-index: 500;
     background-color: #282828;
     display: flex;
     justify-content: space-between;
@@ -266,7 +333,7 @@ footer {
     width: 25%;
 }
 
-.barra-in{
+.barra-in {
     height: 100%;
     width: 30%;
     background-color: #fff;
